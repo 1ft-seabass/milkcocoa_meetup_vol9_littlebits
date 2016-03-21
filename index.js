@@ -26,7 +26,7 @@ iftttDataStore.on("push", function(datum) {
     console.log('[push complete] IFTTTDataStore');
     console.log(datum);
     // 出力ポート2が反応する
-    sp.write(2,function(err,results){
+    sp.write("2",function(err,results){
         console.log('-- socket.io output sp.write complete');
         console.log(err);
         console.log(results);
